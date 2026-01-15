@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Kumar | Glass Neon Portfolio</title>
+
+    <style>
+        :root {
+            --bg1: #0f2027;
+            --bg2: #203a43;
+            --bg3: #2c5364;
+            --glass: rgba(255, 255, 255, 0.12);
+            --border: rgba(255, 255, 255, 0.25);
+            --text: #ffffff;
+            --neon: #22d3ee;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 46px;
+            margin: 0;
+        }
+
+        header p {
+            color: #cbd5f5;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(12px);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 6px 16px
+        }
+
+        nav ul li a {
+            color: #e5e7eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            color: var(--neon);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .glass {
+            background: var(--glass);
+            backdrop-filter: blur(14px);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+        }
+
+        .glass h2 {
+            margin-top: 0;
+            color: var(--neon);
+            letter-spacing: 1px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 22px;
+            border-radius: 14px;
+            margin-top: 18px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 0 20px var(--neon);
+        }
+
+        .skills span {
+            display: inline-block;
+            padding: 9px 18px;
+            margin: 7px;
+            border-radius: 22px;
+            border: 1px solid var(--neon);
+            color: var(--neon);
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 28px;
+            color: #cbd5f5;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Shubham Kumar</h1>
+        <p>Data Entry Operator | Software Trainee | Computer Fundamentals</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#strengths">Strengths</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section id="about" class="glass">
+            <h2>About Me</h2>
+            <p>
+                I am a detail-oriented fresher professional with hands-on experience in data entry,
+                warehouse documentation and mobile quality checks. I have strong computer fundamentals,
+                basic programming knowledge and a continuous learning mindset.
+            </p>
+        </section>
+
+        <section id="objective" class="glass">
+            <h2>Career Objective</h2>
+            <p>
+                To work in a growth-oriented organization where I can utilize my computer skills,
+                time management ability and problem-solving mindset to contribute to organizational
+                success while continuously improving my professional knowledge.
+            </p>
+        </section>
+
+        <section id="experience" class="glass">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>Data Entry Operator – PAN HR Solution Pvt. Ltd.</h3>
+                <ul>
+                    <li>Managed daily data entry tasks with accuracy and speed</li>
+                    <li>Maintained warehouse documentation and internal records</li>
+                    <li>Ensured compliance with company security guidelines</li>
+                    <li>Performed mobile quality checks to meet quality standards</li>
+                    <li>Worked closely with warehouse team to improve workflow efficiency</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="glass">
+            <h2>Skills</h2>
+
+            <h3>Technical Skills</h3>
+            <div class="skills">
+                <span>MS Word</span>
+                <span>MS Excel</span>
+                <span>MS PowerPoint</span>
+                <span>Data Entry</span>
+                <span>Computer Fundamentals</span>
+                <span>Internet & Email</span>
+                <span>Windows / Linux (Basic)</span>
+                <span>Basic Programming</span>
+            </div>
+
+            <h3>Professional & Soft Skills</h3>
+            <div class="skills">
+                <span>Time Management</span>
+                <span>Problem Solving</span>
+                <span>Team Management</span>
+                <span>Team Work</span>
+                <span>Communication Skills</span>
+                <span>Accuracy & Attention to Detail</span>
+                <span>Quick Learner</span>
+                <span>Work Discipline</span>
+                <span>Leadership Basics</span>
+            </div>
+        </section>
+
+        <section id="projects" class="glass">
+            <h2>Projects & Practical Work</h2>
+            <div class="card">
+                <h3>Warehouse Data Management</h3>
+                <p>
+                    Handled daily warehouse data, maintained records and ensured data accuracy.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Mobile Quality Check Process</h3>
+                <p>
+                    Checked mobile devices for defects and ensured products met company quality standards.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Basic Programming Practice</h3>
+                <p>
+                    Solved basic programming problems using conditions, loops and logic building.
+                </p>
+            </div>
+        </section>
+
+        <section id="strengths" class="glass">
+            <h2>Strengths</h2>
+            <ul>
+                <li>Strong focus on accuracy and quality</li>
+                <li>Good time management and task prioritization</li>
+                <li>Positive attitude and learning mindset</li>
+                <li>Ability to work independently and in a team</li>
+                <li>Responsible and disciplined work approach</li>
+            </ul>
+        </section>
+
+        <section class="glass">
+            <h2>Languages</h2>
+            <ul>
+                <li>Hindi – Fluent</li>
+                <li>English – Intermediate</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="glass">
+            <h2>Contact</h2>
+            <p>Email: shubhamumar25@navguruul.com</p>
+            <p>Mobile: 8840091758</p>
+            <p>Location: Banda, Uttar Pradesh</p>
+            <p>LinkedIn: Add your link</p>
+            <p>GitHub: Add your link</p>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 Shubham Kumar | Glass + Neon Portfolio
+    </footer>
+
+</body>
+
+</html>
